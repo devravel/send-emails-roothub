@@ -12,7 +12,7 @@
     <meta name="color-scheme" content="light dark" />
     <meta name="supported-color-schemes" content="light dark" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Redefinição de senha • RootHub</title>
+    <title>Ativação de conta • RootHub</title>
     <!--[if gte mso 9]>
       <xml>
         <o:OfficeDocumentSettings>
@@ -82,12 +82,19 @@
       }
 
       /* Hover Effects for compatible clients */
+      .btn-hover:hover {
+        background-color: #e04456 !important;
+        opacity: 0.9;
+      }
       .icon-hover:hover {
         opacity: 0.8 !important;
       }
       a:focus {
         outline: 2px solid #2949e5 !important;
         outline-offset: 2px !important;
+      }
+      .btn-hover:active {
+        background-color: #d63f4f !important;
       }
     </style>
     <!--[if gte mso 9]>
@@ -124,7 +131,7 @@
         cellpadding="0"
         cellspacing="0"
         width="100%"
-        style="border-collapse: collapse; background-color: #fafafa;"
+        style="border-collapse: collapse; background-color: #fafafa"
       >
         <tr>
           <td align="center" valign="top" style="padding: 16px 0">
@@ -134,42 +141,87 @@
                     <tr>
                     <td align="center" valign="top" bgcolor="#EDE8E2">
                     <![endif]-->
-            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; border-collapse: collapse; border-top: 10px solid #ff5568;" bgcolor="#f3f3fe">
-                        <tr>
-                            <td align="center" valign="top" style="padding: 32px 40px 0 40px;">
-                                <!-- LOGO -->
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tr>
-                                        <td align="left" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-             Roboto, Helvetica, Arial, sans-serif;
- font-size: 25px; color: #0a1567; font-weight: bold;">
-                                            LOGO
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="center" valign="top" style="padding: 16px 40px 0 40px;">
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tr>
-                                        <td align="left" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-             Roboto, Helvetica, Arial, sans-serif;
- font-size: 25px; line-height: 1.5; color: #0a1567; font-weight: bold;">
-                                            Redefinição de senha
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <!--[if gte mso 9]>
+            <table
+              role="presentation"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              width="100%"
+              style="
+                max-width: 600px;
+                border-collapse: collapse;
+                border-top: 10px solid #ff5568;
+              "
+              bgcolor="#f3f3fe"
+            >
+              <tr>
+                <td
+                  align="center"
+                  valign="top"
+                  style="padding: 32px 40px 8px 40px"
+                >
+                  <!-- LOGO -->
+                  <table
+                    role="presentation"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                  >
+                    <tr>
+                      <td
+                        align="left"
+                        style="
+                          font-family: -apple-system, BlinkMacSystemFont,
+                            'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+                          font-size: 25px;
+                          color: #0a1567;
+                          font-weight: bold;
+                        "
+                      >
+                        LOGO
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding: 8px 40px">
+                  <table
+                    role="presentation"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                  >
+                    <tr>
+                      <td
+                        align="left"
+                        style="
+                          font-family: -apple-system, BlinkMacSystemFont,
+                            'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+                          font-size: 25px;
+                          line-height: 1.5;
+                          color: #0a1567;
+                          font-weight: bold;
+                        "
+                      >
+                        Confirme seu email
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height="20" style="font-size: 1px; line-height: 1px">
+                        &nbsp;
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--[if gte mso 9]>
                         </v:textbox>
                         </v:rect>
                         <![endif]-->
-                    </table>
+            </table>
             <!--[if mso]>
                     </td>
                     </tr>
@@ -199,68 +251,89 @@
                 <td
                   align="left"
                   valign="top"
-                  style="padding: 16px 40px 8px 40px"
+                  style="padding: 0 40px 8px 40px"
                   class="mobile-padding"
                 >
                   <p
                     style="
                       margin: 0;
                       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-             Roboto, Helvetica, Arial, sans-serif;
+                        Roboto, Helvetica, Arial, sans-serif;
                       font-size: 18px;
                       line-height: 1.75;
                       color: #0a1567;
+                      text-align: left;
                     "
                   >
-                    Olá, <br />
-                    Você está recebendo este e-mail porque solicitou a
-                    redefinição de senha da sua conta <strong style="color: #0a1567;">RootHub</strong>. Vamos
-                    redefini-la para que você possa acessar sua conta novamente.
-                    Por questões de segurança, esse é um link temporário e ficará ativo APENAS pelos próximos 30
-                    minutos.
+                    Obrigado por escolher a
+                    <strong style="color: #0a1567">RootHub</strong>! Para ativar
+                    sua conta, confirme seu email clicando no link abaixo:
                   </p>
                 </td>
               </tr>
               <tr>
-                <td align="left" valign="top" style="padding: 24px 40px 0 40px">
-                  <!-- Bulletproof Button -->
+                <td align="left" valign="top" style="padding: 16px 40px">
                   <table
                     role="presentation"
-                    border="0"
-                    cellspacing="0"
                     cellpadding="0"
-                    class="btn"
+                    cellspacing="0"
+                    border="0"
                   >
                     <tr>
-        <td
-          align="center"
-          bgcolor="#ff5568"
-          style="
-            background-color:#ff5568;
-            padding:16px 32px;
-            border-radius:6px;
-          "
-        >
-          <a
-            href="#"
-            target="_blank"
-            role="button"
-            aria-label="Confirmar email no RootHub"
-            title="Confirmar email no RootHub"
-            style="
-              font-family:Arial,sans-serif;
-              font-size:18px;
-              font-weight:bold;
-              color:#ffffff;
-              text-decoration:none;
-              display:inline-block;
-            "
-          >
-            REDEFINIR SENHA
-          </a>
-        </td>
-      </tr>
+                      <td
+                        align="center"
+                        bgcolor="#ff5568"
+                        style="
+                          background-color: #ff5568;
+                          padding: 16px 32px;
+                          border-radius: 6px;
+                        "
+                      >
+                        <a
+                          href="#"
+                          target="_blank"
+                          role="button"
+                          aria-label="Confirmar email no RootHub"
+                          title="Confirmar email no RootHub"
+                          style="
+                            font-family: Arial, sans-serif;
+                            font-size: 15px;
+                            font-weight: bold;
+                            color: #ffffff;
+                            text-decoration: none;
+                            display: inline-block;
+                          "
+                        >
+                          CONFIRMAR EMAIL
+                        </a>
+                      </td>
+                    </tr>
                   </table>
+                  <br />
+                  <hr />
+                  <tr>
+                    <td
+                      align="left"
+                      valign="top"
+                      style="padding: 0 40px 10px 40px"
+                      class="mobile-padding"
+                    >
+                      <p
+                        style="
+                          margin: 0;
+                          font-family: -apple-system, BlinkMacSystemFont,
+                            'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+                          font-size: 16px;
+                          line-height: 1.75;
+                          color: #0a1567;
+                          text-align: left;
+                        "
+                      >
+                        Não realizou este cadastro? Por favor, ignore este
+                        email.
+                      </p>
+                    </td>
+                  </tr>
                 </td>
               </tr>
             </table>
@@ -293,60 +366,6 @@
                 <td
                   align="center"
                   valign="top"
-                  style="padding: 16px 40px 8px 40px"
-                  class="mobile-padding"
-                >
-                <hr>
-                <br>
-                  <p
-                    style="
-                      margin: 0;
-                      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-             Roboto, Helvetica, Arial, sans-serif;
-                      font-size: 15px;
-                      line-height: 1.75;
-                      color: #0a1567;
-                      text-align: left;
-                    "
-                  >
-                    <strong>Não solicitou a redefinição de senha?</strong> Por favor, entre em <a href="#" style="color: #0084ff;">contato</a> conosco para verificar a segurança de sua conta.
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td align="left" valign="top" style="padding: 0 40px;">
-                  <!-- Bulletproof Button -->
-                  
-                </td>
-              </tr>
-            <table
-              role="presentation"
-              border="0"
-              cellpadding="0"
-              cellspacing="0"
-              width="100%"
-              style="
-                max-width: 600px;
-                border-collapse: collapse;
-                background-color: #f3f3fe;
-              "
-              bgcolor="#F3F3FE"
-            >
-              <tr>
-                <td align="center" valign="top" style="padding: 0 16px 0 16px">
-                  <table
-                    role="presentation"
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                  >
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                            <td
-                  align="center"
-                  valign="top"
                   style="
                     padding: 8px 16px 32px 16px;
                     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -358,8 +377,8 @@
                   <p style="margin: 0">
                     &copy; 2025 RootHub, Todos os direitos reservados.
                   </p>
-                </td>   
-                        </tr>
+                </td>
+              </tr>
             </table>
             <!--[if mso]>
                     </td>

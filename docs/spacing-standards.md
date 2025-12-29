@@ -1,0 +1,25 @@
+# Padrões de Espaçamento para Templates de Email RootHub
+
+- Unidade base: 8px (sistema de múltiplos de 8)
+- Estrutura geral:
+  - Wrapper externo: padding vertical 16px
+  - Cabeçalho (header):
+    - Bloco do logo: padding 32px 40px 0 40px
+    - Título/subtítulo: padding 16px 40px 0 40px
+    - Espaçador entre elementos: altura 16px
+  - Corpo (content):
+    - Seções principais: padding 16px 40px 8px 40px
+    - Parágrafos de destaque: margin-bottom 16px
+  - Chamada para ação (CTA):
+    - Linha de CTA: padding 24px 16px
+    - Botão: padding 16px 32px; border-radius 6px
+  - Rodapé (footer):
+    - Ícones/links: padding 0 16px 8px 16px
+    - Copyright: padding 8px 16px 32px 16px
+- Mobile:
+  - .mobile-padding: padding-left/right 16px !important
+  - Imagens responsivas: .img-full width 100%, height auto
+- Observações:
+  - Larguras de conteúdo mantidas com max-width: 600px
+  - Laterais de 40px preservadas nos blocos principais para equilíbrio visual
+  - Valores anteriores não múltiplos (10, 14, 15, 20, 25, 30) ajustados ao múltiplo mais próximo

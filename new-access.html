@@ -9,10 +9,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="x-apple-disable-message-reformatting" />
-    <meta name="color-scheme" content="light dark" />
-    <meta name="supported-color-schemes" content="light dark" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Bem-vindo à RootHub 🚀</title>
+    <title>Novo acesso detectado • RootHub</title>
     <!--[if gte mso 9]>
       <xml>
         <o:OfficeDocumentSettings>
@@ -71,8 +69,8 @@
       /* Media Queries */
       @media screen and (max-width: 600px) {
         .mobile-padding {
-          padding-left: 16px !important;
-          padding-right: 16px !important;
+          padding-left: 20px !important;
+          padding-right: 20px !important;
         }
         .img-full {
           width: 100% !important;
@@ -120,7 +118,7 @@
         style="border-collapse: collapse; background-color: #fafafa"
       >
         <tr>
-          <td align="center" valign="top" style="padding: 16px 0">
+          <td align="center" valign="top" style="padding: 20px 0">
             <!-- Header Section with Background -->
             <!--[if mso]>
                     <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="600" align="center" style="width:600px;">
@@ -140,11 +138,17 @@
               "
               bgcolor="#f3f3fe"
             >
+              <!-- Outlook Background Image Fallback via VML -->
+              <!--[if gte mso 9]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:300px;">
+                        <v:fill type="frame" src="https://raw.githubusercontent.com/devravel/send-emails-roothub/refs/heads/main/roothub-email-assets/banners/email-background-layer.svg" color="#EDE8E2" />
+                        <v:textbox inset="0,0,0,0">
+                        <![endif]-->
               <tr>
                 <td
                   align="center"
                   valign="top"
-                  style="padding: 32px 40px 0 40px"
+                  style="padding: 30px 30px 0 30px"
                 >
                   <!-- LOGO -->
                   <table
@@ -175,7 +179,7 @@
                 <td
                   align="center"
                   valign="top"
-                  style="padding: 16px 40px 0 40px"
+                  style="padding: 20px 30px 0 30px"
                 >
                   <table
                     role="presentation"
@@ -196,11 +200,11 @@
                           font-weight: bold;
                         "
                       >
-                        Boas vindas
+                        Novo acesso
                       </td>
                     </tr>
                     <tr>
-                      <td height="16" style="font-size: 1px; line-height: 1px">
+                      <td height="20" style="font-size: 1px; line-height: 1px">
                         &nbsp;
                       </td>
                     </tr>
@@ -241,7 +245,7 @@
                 <td
                   align="left"
                   valign="top"
-                  style="padding: 0 40px 8px 40px"
+                  style="padding: 0 40px 10px 40px"
                   class="mobile-padding"
                 >
                   <p
@@ -252,79 +256,82 @@
                       font-size: 18px;
                       line-height: 1.75;
                       color: #0a1567;
-                      max-width: 500px;
                     "
                   >
-                    Seja bem-vindo(a) à
-                    <strong style="color: #0a1567">RootHub</strong>! A
-                    plataforma que impulsiona seus projetos e facilita conexões
-                    estratégicas. Nosso objetivo é ajudar você a alcançar
-                    melhores resultados e aproveitar as melhores oportunidades
-                    disponíveis.
-                  </p>
-                  <p style="margin: 0; font-size: 18px; line-height: 1.75">
-                    &nbsp;
+                    Olá, <br />
+                    Um novo login foi detectado em sua conta
+                    <strong style="color: #0a1567">RootHub</strong>: <br />
                   </p>
                   <p
                     style="
-                      margin: 0 0 16px 0;
+                      margin: 0;
+                      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                        Roboto, Helvetica, Arial, sans-serif;
+                      font-size: 18px;
+                      line-height: 1.75;
+                      color: #0084ff;
+                    "
+                  >
+                    {{email}}
+                  </p>
+                  <p
+                    style="
+                      margin: 15px 0 0 0;
                       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
                         Roboto, Helvetica, Arial, sans-serif;
                       font-size: 18px;
                       line-height: 1.75;
                       color: #0a1567;
+                    "
+                  >
+                    <strong>Localização:</strong> {{location}}<br />
+                    <strong>Navegador:</strong> {{browser}}<br />
+                    <strong>Dispositivo:</strong> {{device}}
+                  </p>
+
+                  <p style="margin: 0; font-size: 18px; line-height: 1.75">
+                    &nbsp;
+                  </p>
+                  <hr />
+                  <br />
+                  <p
+                    style="
+                      margin: 0;
+                      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                        Roboto, Helvetica, Arial, sans-serif;
+                      font-size: 16px;
+                      line-height: 1.75;
+                      color: #0a1567;
                       max-width: 500px;
                     "
                   >
-                    <strong style="color: #0a1567">Somos a RootHub</strong
-                    ><br />
-                    Atuamos para te ajudar com suas vendas de ponta a ponta,
-                    acesse a plataforma e alcance os melhores resultados.
+                    <strong>Não reconhece essa atividade?</strong>
+                    <span style="color: #0084ff"
+                      ><a href="{{resetLink}}" style="color: #0084ff"
+                        >Troque sua senha imediatamente</a
+                      ></span
+                    >. <br />Ao trocar sua senha, sua conta será desconectada de
+                    todos os dispositivos e será necessário fazer login
+                    novamente.
+                  </p>
+                  <p
+                    style="
+                      margin: 10px 0 0 0;
+                      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                        Roboto, Helvetica, Arial, sans-serif;
+                      font-size: 16px;
+                      line-height: 1.75;
+                      color: #0a1567;
+                      max-width: 500px;
+                    "
+                  >
+                    Para mais ajuda,
+                    <a href="#" style="color: #0084ff">contate-nos</a>.
                   </p>
                 </td>
               </tr>
               <!-- Call to Action Section -->
-              <tr>
-                <td align="center" valign="top" style="padding: 24px 16px">
-                  <table
-                    role="presentation"
-                    cellpadding="0"
-                    cellspacing="0"
-                    border="0"
-                  >
-                    <tr>
-                      <td
-                        align="center"
-                        bgcolor="#ff5568"
-                        style="
-                          background-color: #ff5568;
-                          padding: 16px 32px;
-                          border-radius: 6px;
-                        "
-                      >
-                        <a
-                          href="#"
-                          target="_blank"
-                          role="button"
-                          aria-label="Confirmar email no RootHub"
-                          title="Confirmar email no RootHub"
-                          style="
-                            font-family: -apple-system, BlinkMacSystemFont,
-                              'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-                            font-size: 18px;
-                            font-weight: bold;
-                            color: #ffffff;
-                            text-decoration: none;
-                            display: inline-block;
-                          "
-                        >
-                          ACESSAR PLATAFORMA
-                        </a>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
+              <tr></tr>
             </table>
             <!--[if mso]>
                     </td>
@@ -355,153 +362,8 @@
                 <td
                   align="center"
                   valign="top"
-                  style="padding: 0 16px 8px 16px"
-                >
-                  <hr />
-                  <br />
-                  <table
-                    role="presentation"
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                  >
-                    <tr>
-                      <td align="center" style="padding: 0 8px">
-                        <a
-                          href="#"
-                          target="_blank"
-                          role="link"
-                          aria-label="Facebook"
-                          title="Facebook"
-                          tabindex="0"
-                          style="text-decoration: none"
-                        >
-                          <!--[if mso]>
-                            <img
-                              src="https://raw.githubusercontent.com/devravel/send-emails-roothub/main/roothub-email-assets/social/facebook.svg"
-                              alt="Facebook"
-                              width="20"
-                              height="20"
-                              style="
-                                display: block;
-                                width: 20px;
-                                height: 20px;
-                                border: 0;
-                              "
-                              class="icon-hover"
-                            />
-                          <![endif]-->
-                          <!--[if !mso]><!-- -->
-                          <img
-                            src="https://raw.githubusercontent.com/devravel/send-emails-roothub/main/roothub-email-assets/social/facebook.png"
-                            alt="Facebook"
-                            width="20"
-                            height="20"
-                            style="
-                              display: block;
-                              width: 20px;
-                              height: 20px;
-                              border: 0;
-                            "
-                            class="icon-hover"
-                          />
-                          <!--<![endif]-->
-                        </a>
-                      </td>
-                      <td align="center" style="padding: 0 8px">
-                        <a
-                          href="#"
-                          target="_blank"
-                          role="link"
-                          aria-label="Instagram"
-                          title="Instagram"
-                          tabindex="0"
-                          style="text-decoration: none"
-                        >
-                          <!--[if mso]>
-                            <img
-                              src="https://raw.githubusercontent.com/devravel/send-emails-roothub/main/roothub-email-assets/social/instagram.svg"
-                              alt="Instagram"
-                              width="20"
-                              height="20"
-                              style="
-                                display: block;
-                                width: 20px;
-                                height: 20px;
-                                border: 0;
-                              "
-                              class="icon-hover"
-                            />
-                          <![endif]-->
-                          <!--[if !mso]><!-- -->
-                          <img
-                            src="https://raw.githubusercontent.com/devravel/send-emails-roothub/main/roothub-email-assets/social/instagram.png"
-                            alt="Instagram"
-                            width="20"
-                            height="20"
-                            style="
-                              display: block;
-                              width: 20px;
-                              height: 20px;
-                              border: 0;
-                            "
-                            class="icon-hover"
-                          />
-                          <!--<![endif]-->
-                        </a>
-                      </td>
-                      <td align="center" style="padding: 0 8px">
-                        <a
-                          href="#"
-                          target="_blank"
-                          role="link"
-                          aria-label="Whatsapp"
-                          title="Whatsapp"
-                          tabindex="0"
-                          style="text-decoration: none"
-                        >
-                          <!--[if mso]>
-                            <img
-                              src="https://raw.githubusercontent.com/devravel/send-emails-roothub/main/roothub-email-assets/social/whatsapp.svg"
-                              alt="Whatsapp"
-                              width="20"
-                              height="20"
-                              style="
-                                display: block;
-                                width: 20px;
-                                height: 20px;
-                                border: 0;
-                              "
-                              class="icon-hover"
-                            />
-                          <![endif]-->
-                          <!--[if !mso]><!-- -->
-                          <img
-                            src="https://raw.githubusercontent.com/devravel/send-emails-roothub/main/roothub-email-assets/social/whatsapp.png"
-                            alt="Whatsapp"
-                            width="20"
-                            height="20"
-                            style="
-                              display: block;
-                              width: 20px;
-                              height: 20px;
-                              border: 0;
-                            "
-                            class="icon-hover"
-                          />
-                          <!--<![endif]-->
-                        </a>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td
-                  align="center"
-                  valign="top"
                   style="
-                    padding: 8px 16px 32px 16px;
+                    padding: 10px 20px 30px 20px;
                     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
                       Roboto, Helvetica, Arial, sans-serif;
                     font-size: 12px;
